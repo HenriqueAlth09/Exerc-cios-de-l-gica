@@ -5,16 +5,15 @@ int main() {
 
     // Ler os números
     for (int i = 0; i < 5; i++) {
-        printf("Digite o %dº número: ", i + 1);
-        scanf("%d", &vetor[i]);
+        printf("Digite o número: ");
+        scanf("%d", &vetor);
     }
 
     // Imprimir o vetor invertido
     printf("Vetor invertido: ");
     for (int i = 4; i >= 0; i--) {
-        printf("%d ", vetor[i]);
+        printf("%d ", vetor);
     }
-    printf("\n");
 
     return 0;
 }
