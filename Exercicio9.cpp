@@ -11,6 +11,7 @@ int main(){
          scanf("%d", &opcao);
          
          switch (opcao){
+             //usei um switch para casos variados//
              case 1:
              printf("Digite o primeiro numero: ");
              scanf("%d", &num1);
