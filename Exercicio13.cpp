@@ -6,11 +6,11 @@ int main() {
 
     // Ler os números
     for (int i = 0; i < 10; i++) {
-        printf("Digite o %dº número: ", i + 1);
-        scanf("%d", &numeros[i]);
+        printf("Digite os números: ");
+        scanf("%d", &numeros);
 
         // Verificar se o número é par
-        if (numeros[i] % 2 == 0) {
+        if (numeros % 2 == 0) {
             pares++;
         }
     }
