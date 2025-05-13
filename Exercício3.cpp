@@ -1,23 +1,27 @@
 #include <stdio.h>
 
 int main(){
-    float not1, not2, med, som;
-    printf("Digite o primeiro numero: ");
-    scanf("%f", &not1);
-    printf("Digite a segunda nota: ");
-    scanf("%f", &not2);
-    //aqui eu somei as notas e fiz as medias//
-    som = (not1 + not2);
-    med = som / 2;
-    // aqui eu fiz um se não se, para verificar se ele foi aprovado//
-    if (med >= 7)
+    int idade;
+    printf("Informe sua idade: ");
+    scanf("%d", &idade);
+    //aqui eu usei um if else para fazer um teste logico//
+    if( idade < 16 )
     {
-        printf("Você foi aprovado: %2.f", med);
+        printf("Você não pode votar!!");
     }
-    else
+    else if ( idade < 18 )
     {
-        printf("Você foi reprovado: %2.f", med);
+        printf("O voto é facultativo!!");
     }
-
-    return 0;
+    else if ( idade >=18 && idade < 69 )
+    {
+        printf("Você é obrigado a votar!!");
+    }
+    else if ( idade >= 70 )
+    {
+        printf("Voto facultativo");
+    }
+    
+   return 0;
+    
 }
