@@ -9,7 +9,7 @@ int main (){
     scanf("%d", &n2);
     
     
-    //Aqui eu usei um se não se, para verificar se o numero é par ou não//
+    //Aqui eu usei um se não se, para verificar qual o numero maior//
     if (n1 > n2 )
     {
         printf("Seu numero maior é: %d\n", n1);
